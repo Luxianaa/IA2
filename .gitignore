@@ -1,0 +1,49 @@
+# Entorno virtual
+venv/
+env/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+.Python
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Distribuciones / empaquetado
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# Modelos grandes
+*.h5
+*.pkl
+*.pt
+*.pth
+
+# Datasets grandes (exceden límites de GitHub o son muy pesados)
+RNN,LSTM,GRU/PAMAP2_Dataset/
+RNN,LSTM,GRU/Dataset/
+*.dat
+*.zip
+*.csv
+Redes Convolucionales/Dataset/
+
+# Repositorio anidado (tiene su propio .git, no se puede subir directamente)
+IA1/IA/
