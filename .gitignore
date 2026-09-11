@@ -1,49 +1,86 @@
-# Entorno virtual
+# ── Entorno virtual ──────────────────────────────────
 venv/
 env/
 .env/
 .venv/
 
-# Python cache
+# ── Python cache ──────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyc
 .Python
 
-# Jupyter checkpoints
+# ── Jupyter ───────────────────────────────────────────
 .ipynb_checkpoints/
 
-# Archivos del sistema
+# ── Sistema operativo ─────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# IDEs
+# ── IDEs ──────────────────────────────────────────────
 .vscode/
 .idea/
 *.code-workspace
 
-# Distribuciones / empaquetado
+# ── Distribuciones ────────────────────────────────────
 dist/
 build/
 *.egg-info/
 
-# Logs
+# ── Logs ──────────────────────────────────────────────
 *.log
 
-# Modelos grandes
+# ── Modelos entrenados (binarios pesados) ─────────────
 *.h5
 *.pkl
 *.pt
 *.pth
+*.task
 
-# Datasets grandes (exceden límites de GitHub o son muy pesados)
-RNN,LSTM,GRU/PAMAP2_Dataset/
-RNN,LSTM,GRU/Dataset/
-*.dat
+# ════════════════════════════════════════════════════
+# DATASETS Y ARCHIVOS GRANDES
+# ════════════════════════════════════════════════════
+
+# Archivos comprimidos (ZIPs, tarballs, etc.)
 *.zip
-*.csv
-Redes Convolucionales/Dataset/
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
 
-# Repositorio anidado (tiene su propio .git, no se puede subir directamente)
+# Datos tabulares pesados
+*.csv
+*.dat
+*.parquet
+*.feather
+*.arrow
+
+# Imágenes / audio / video en masa
+*.hdf5
+*.h5
+*.npy
+*.npz
+*.bin
+*.mat
+*.tfrecords
+
+# Carpetas de datasets específicos
+data/
+dataset*/
+datasets/
+RNN,LSTM,GRU/Dataset/
+RNN,LSTM,GRU/PAMAP2_Dataset/
+Redes Convolucionales/Dataset/
+lab3/
+
+# ── Archivos específicos de IA1 ───────────────────────
+IA1/data.zip
+IA1/Tareas.zip
+IA1/prueba AxF.zip
+IA1/Labs ZIP/
 IA1/IA/
+
+# ── Proyecto con espacios en el nombre ───────────────
+IA Project/
